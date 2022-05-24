@@ -1,0 +1,2 @@
+con este comando envias los ultimos 10 logs a el fichero logs
+tail -n 10 /var/log/auth.log > /home/angel/logs
