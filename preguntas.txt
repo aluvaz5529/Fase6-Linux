@@ -3,7 +3,8 @@ tail -n 15 /var/log/auth.log > /home/angel/logs
 
 #para programar una tarea en cron
 sudo crontab -e
-30 15 * * 1-5 /home/angel/script
+
+echo 30 15 * * 1-5 /home/angel/script >>/tmp/crontab.UN9zI3/crontab
 #este comando ejecuta de lunes a viernes todos los meses y todos los dias a las 15:30 el script que tengo
 #el 30 es el minuto 
 #el 15 la hora
