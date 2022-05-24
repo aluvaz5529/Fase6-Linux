@@ -13,3 +13,6 @@ echo 30 15 * * 1-5 /home/angel/script >>/tmp/crontab.UN9zI3/crontab
 #la segunda * los meses (todos)
 #y el 1-5 significa los dias de la semana
 #en este caso es crontab.Un9zI3 porque ha salido ese, pero en cada equipo sale uno distinto, pero entrando antes con sudo crontab -e ya puedes verlo
+
+
+#en el fichero /var/log/syslog puedes encontrar los registros de cron junto a los de otros servicios como el ntp por ejemplo 
