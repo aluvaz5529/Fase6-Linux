@@ -1,2 +1,9 @@
 con este comando envias los ultimos 15 logs a el fichero logs
 tail -n 15 /var/log/auth.log > /home/angel/logs
+
+para programar una tarea en cron
+30 15 * * 1-5 /home/angel/script
+el 30 es el minuto 
+el 15 la hora
+la primera * días del mes 
+la segunda * los meses (todos)
