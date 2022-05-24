@@ -15,3 +15,11 @@ tail -n 15 /var/log/auth.log > /home/angel/logs
 #en este caso es crontab.Un9zI3, pero cada vez que entras y sales cambia
 
 #en el fichero /var/log/syslog puedes encontrar los registros de cron junto a los de otros servicios como el ntp por ejemplo 
+
+#para programar copias de seguridad del home
+
+#!/bin/bash
+usuario=`whoami`
+fecha=`date +%d%m%y`
+
+tar -czvf /home/$usuario/$usuario$fecha /home/$usuario/
