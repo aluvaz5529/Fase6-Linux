@@ -2,17 +2,17 @@
 tail -n 15 /var/log/auth.log > /home/angel/logs
 
 #para programar una tarea en cron
-sudo crontab -e
+#sudo crontab -e
 
-echo 30 15 * * 1-5 /home/angel/script >>/tmp/crontab.UN9zI3/crontab
 #este comando ejecuta de lunes a viernes todos los meses y todos los dias a las 15:30 el script que tengo
+echo 30 15 * * 1-5 /home/angel/script >>/tmp/crontab.UN9zI3/crontab
 
 #el 30 es el minuto 
 #el 15 la hora
 #la primera * días del mes 
 #la segunda * los meses (todos)
 #y el 1-5 significa los dias de la semana
-#en este caso es crontab.Un9zI3 porque ha salido ese, pero en cada equipo sale uno distinto, pero entrando antes con sudo crontab -e ya puedes verlo
+#en este caso es crontab.Un9zI3 porque ha salido ese, pero cada vez que entras y sales cambia, pero entrando antes con sudo crontab -e ya puedes verlo
 
 
 #en el fichero /var/log/syslog puedes encontrar los registros de cron junto a los de otros servicios como el ntp por ejemplo 
