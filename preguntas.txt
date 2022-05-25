@@ -24,3 +24,7 @@ usuario=`whoami`
 fecha=`date +%d%m%y`
 
 tar -czvf /home/$usuario/$usuario$fecha /home/$usuario/
+
+
+#listar todos los servicios
+sudo systemctl list-unit-files --type service --all
