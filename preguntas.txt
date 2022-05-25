@@ -18,6 +18,7 @@ tail -n 15 /var/log/auth.log > /home/angel/logs
 
 #para programar copias de seguridad del home
 
+#script copy-home
 #!/bin/bash
 usuario=`whoami`
 fecha=`date +%d%m%y`
